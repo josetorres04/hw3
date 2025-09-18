@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Contact – Fictitious Co.</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <nav>
+    <a href="./index.html">Back to Introductory Page</a>
+  </nav>
+
+  <h2>Get in Touch</h2>
+  <h4>We’d love to hear from you</h4>
+
+  <form action="#" method="get">
+    <!-- Text input -->
+    <p>
+      <label for="name">Name:</label><br>
+      <input id="name" name="name" type="text" placeholder="Your full name">
+    </p>
+
+    <!-- Password input -->
+    <p>
+      <label for="pwd">Password:</label><br>
+      <input id="pwd" name="pwd" type="password" placeholder="Choose a password">
+    </p>
+
+    <!-- Radio buttons (at least 3) -->
+    <fieldset>
+      <legend>Preferred Contact Method</legend>
+      <label><input type="radio" name="contact" value="email" checked> Email</label>
+      <label><input type="radio" name="contact" value="phone"> Phone</label>
+      <label><input type="radio" name="contact" value="sms"> SMS</label>
+    </fieldset>
+
+    <!-- Checkboxes (at least 2) -->
+    <fieldset>
+      <legend>Subscribe to</legend>
+      <label><input type="checkbox" name="subs" value="news"> Newsletter</label>
+      <label><input type="checkbox" name="subs" value="deals"> Deals</label>
+    </fieldset>
+
+    <!-- Multiple select box (at least 4 options) -->
+    <p>
+      <label for="services">Services Interested In (hold Ctrl/Cmd to select multiple)</label><br>
+      <select id="services" name="services" multiple size="4">
+        <option value="consulting">Consulting</option>
+        <option value="implementation">Implementation</option>
+        <option value="training">Training</option>
+        <option value="support">Support</option>
+      </select>
+    </p>
+
+    <!-- Date input (HTML5) -->
+    <p>
+      <label for="date">Preferred Start Date:</label><br>
+      <input id="date" name="date" type="date">
+    </p>
+
+    <!-- Submit button -->
+    <p>
+      <input type="submit" value="Submit Request">
+    </p>
+  </form>
+</body>
+</html>
+
