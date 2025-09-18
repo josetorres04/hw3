@@ -1,0 +1,49 @@
+/* Base typography */
+body {
+  font-family: Calibri, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 16px 48px;
+}
+
+p {
+  font-family: Helvetica, Calibri, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+}
+
+/* Links */
+a:link { color: red; }
+a:visited { color: green; }
+
+/* Lists */
+ul { list-style-type: square; }
+ol { list-style-type: lower-roman; }
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+tbody tr:nth-child(even) { background: #f0f0f0; }         /* even rows light gray */
+tbody tr:hover { background: #d8ecff; }                    /* any row hover light blue */
+
+/* Form controls */
+input[type="submit"] {
+  padding: 8px 14px;
+  border: 1px solid #888;
+  background: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover { background: red; color: #fff; }
+input[type="submit"]:active { background: green; color: #fff; }
+
